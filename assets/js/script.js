@@ -1,5 +1,8 @@
 // Display date and time 
 var todaysDate = moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
+// var time =  moment().format("h:mm:ss a");
+// console.log(time)
+console.log(todaysDate)
 $("#currentDate").html( todaysDate) ;
 
     // Save Button 
@@ -9,18 +12,15 @@ $(document).ready(function () {
        
         var text = $(this).siblings(".textbox").val();
         var time = $(this).parent().attr("id");
-
         localStorage.setItem(time, text);
     })
 
 // Time tracker 
     function timeTracker() {
         var timeNow = moment().hour();
-
-        
         $(".time-block").each(function () {
             var blockTime = parseInt($(this).attr("id").split("hour")[1]);
-
+            if (blockTime > timeNow) {
                 $(this).removeClass("future");
                 $(this).removeClass("present");
                 $(this).addClass("past");
@@ -49,9 +49,6 @@ $(document).ready(function () {
     $("#hour3 .textbox").val(localStorage.getItem("hour3"));
     $("#hour4 .textbox").val(localStorage.getItem("hour4"));
     $("#hour5 .textbox").val(localStorage.getItem("hour5"));
-   
-    localStorage.setItem(""),
-    
 
     timeTracker();
 }) 

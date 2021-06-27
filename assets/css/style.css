@@ -23,10 +23,9 @@ body {
       color: black;
       border-radius: 0;
       border-bottom: 10px solid black;
-    height: 350px;
+      height: 200px;
   }
   
- 
   .textbox{
     white-space: pre-wrap;
   }
@@ -40,7 +39,7 @@ body {
     white-space: pre-wrap;
     -ms-flex-align:center;
     height: 80px;
-    border-top: 1px solid white;;
+    
   }
   
   .hour {
@@ -53,17 +52,17 @@ body {
   }
   
   .past {
-    background-color: #8e15df;
-    color: white;
+    background-color: #430d66;
+    color: rgb(54, 21, 21);
   }
   
   .present {
-    background-color: #e561ff;
+    background-color: #597cc9;
     color: white;
   }
   
   .future {
-    background-color: #dd77a2;
+    background-color: #ca407a;
     color: white;
   }
   
