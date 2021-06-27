@@ -4,6 +4,6 @@
  the text in each row that will stay on the page, If the current time of day is in the past present of future they will have certain colors.
  
  
- url :
+ url : https://lakynfelix.github.io/DailyPlanner/
  
  
