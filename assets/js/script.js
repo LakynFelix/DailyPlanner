@@ -49,7 +49,9 @@ $(document).ready(function () {
     $("#hour3 .textbox").val(localStorage.getItem("hour3"));
     $("#hour4 .textbox").val(localStorage.getItem("hour4"));
     $("#hour5 .textbox").val(localStorage.getItem("hour5"));
-  
+   
+    localStorage.setItem(""),
+    
 
     timeTracker();
 }) 
