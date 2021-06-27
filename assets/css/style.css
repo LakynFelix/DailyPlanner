@@ -11,21 +11,22 @@ body {
   textarea{
     opacity: 50%;
     border: none;
-    resize: none;
     color: #000000;
-    border-left: 2px solid black;
+    border-left: 2px solid rgb(245, 243, 243);
     padding: 10px;
     
   }
   
-  .top-page {
-    text-align: center;
-    background-color: transparent;
-    color: black;
-    border-radius: 0;
-    border-bottom: 30px solid black;
+  .main {
+      text-align: center;
+      background-color: transparent;
+      color: black;
+      border-radius: 0;
+      border-bottom: 10px solid black;
+    height: 350px;
   }
   
+ 
   .textbox{
     white-space: pre-wrap;
   }
@@ -47,6 +48,8 @@ body {
     color: #000000;
     border-top: 1px dashed #000000;
     vertical-align: middle;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
   }
   
   .past {
@@ -76,7 +79,8 @@ body {
   .saveBtn i:hover {
     margin-top: 1px;
     font-size: 10px;
-
     transition: all .2s ease-in-out;
-   
+   text-align-last: center;
   }
+
+
