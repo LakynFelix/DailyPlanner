@@ -49,11 +49,10 @@ textarea {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dotted #1e052e;
-  vertical-align: middle;
+  
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
-  background-position-x: center;
-
+ 
 }
 
 .past {
@@ -76,11 +75,10 @@ textarea {
   background-color: #00080a;
   color: rgb(119, 4, 90);
   background-position-y: center;
- 
 }
 
 .saveBtn i:hover {
- color: #ca407a;
+  color: #ca407a;
   font-size: 18px;
   transition: all 0.2s ease-in-out;
   background-position-y: center;

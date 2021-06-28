@@ -1,9 +1,11 @@
 // Display date and time
+
 var todaysDate = moment().format("LLLL");
 console.log(todaysDate);
 $("#currentDate").html(todaysDate);
 
 // Save Button Function
+
 $(document).ready(function () {
   $(".saveBtn").on("click", function () {
     var text = $(this).siblings(".textbox").val();
@@ -12,7 +14,7 @@ $(document).ready(function () {
   });
 
   // Time tracker
-  
+
   function timeTracker() {
     var timeNow = moment().hour();
     $(".time-block").each(function () {
