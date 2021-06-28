@@ -4,7 +4,7 @@ body {
     line-height: 1;
    /* background-color: #124d5a; */
     background: linear-gradient(rgb(72, 203, 208), rgb(104, 166, 185), rgb(118, 129, 163), rgb(123, 91, 141), rgb(121, 48, 120));
-    padding-bottom: 50px;
+
   }
   
   
@@ -38,7 +38,7 @@ body {
   .row {
     white-space: pre-wrap;
     -ms-flex-align:center;
-    height: 80px;
+    height: 100px;
     
   }
   
@@ -63,7 +63,7 @@ body {
   
   .future {
     background-color: #ca407a;
-    
+    color: white;
   }
   
   .saveBtn {
@@ -78,7 +78,7 @@ body {
   
   .saveBtn i:hover {
     margin-top: 1px;
-    font-size: 12px;
+    font-size: 18px;
     transition: all .2s ease-in-out;
   }
 

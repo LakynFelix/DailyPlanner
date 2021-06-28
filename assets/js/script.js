@@ -1,11 +1,9 @@
 // Display date and time 
-var todaysDate = moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
-// var time =  moment().format("h:mm:ss a");
-// console.log(time)
+var todaysDate = moment().format('LLLL');
 console.log(todaysDate)
 $("#currentDate").html( todaysDate) ;
 
-    // Save Button 
+    // Save Button Function
 $(document).ready(function () {
    
     $(".saveBtn").on("click", function () {
@@ -16,30 +14,30 @@ $(document).ready(function () {
     })
 
 // Time tracker 
-    function timeTracker() {
-        var timeNow = moment().hour();
-        $(".time-block").each(function () {
-            var blockTime = parseInt($(this).attr("id").split("hour")[1]);
-            if (blockTime < timeNow) {
-                $(this).removeClass("future");
-                $(this).removeClass("present");
-                $(this).addClass("past");
-            }
-            else if (blockTime === timeNow) {
-                $(this).removeClass("past");
-                $(this).removeClass("future");
-                $(this).addClass("present");
-            }
-            else {
-                $(this).removeClass("present");
-                $(this).removeClass("past");
-                $(this).addClass("future");
+function timeTracker() {
+    var timeNow = moment().hour();
+    $(".time-block").each(function () {
+        var blockTime = parseInt($(this).attr("id").splice("hour")[1]);
+        if (timeNow > blockTime) {
+            $(this).removeClass("#future");
+            $(this).removeClass("#present");
+            $(this).addClass("#past");
+        }
+        else if (blockTime === timeNow) {
+            $(this).removeClass("#past");
+            $(this).removeClass("#future");
+            $(this).addClass("#present");
+        }
+        else {
+            $(this).removeClass(".present");
+            $(this).removeClass(".past");
+            $(this).addClass(".future");
 
-            }
-        });
+        }
+    });
     }
 
-    // Get item from local storage if any
+    // Get item from local storage
     $("#hour9 .textbox").val(localStorage.getItem("hour9"));
     $("#hour10 .textbox").val(localStorage.getItem("hour10"));
     $("#hour11 .textbox").val(localStorage.getItem("hour11"));
