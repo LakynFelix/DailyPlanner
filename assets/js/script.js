@@ -17,7 +17,7 @@ $(document).ready(function () {
 function timeTracker() {
     var timeNow = moment().hour();
     $(".time-block").each(function () {
-        var blockTime = parseInt($(this).attr("id").splice("hour")[1]);
+        var blockTime = parseInt($(this).attr("id").splice("hour")[0]);
         if (timeNow > blockTime) {
             $(this).removeClass("#future");
             $(this).removeClass("#present");

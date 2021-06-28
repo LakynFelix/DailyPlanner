@@ -18,6 +18,7 @@ body {
   }
   
   .main {
+    margin-bottom: 30px;
       text-align: center;
       background-color: transparent;
       color: black;
@@ -52,12 +53,12 @@ body {
   }
   
   .past {
-    background-color: #430d66;
+    background-color: #1d0a2b;
   
   }
   
   .present {
-    background-color: #597cc9;
+    background-color: #264b99;
     
   }
   
@@ -68,8 +69,8 @@ body {
   
   .saveBtn {
     border-left: 1px solid rgb(53, 7, 95);
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
     background-color: #00080a;
     color: rgb(255, 255, 255);
     align-items: center;
